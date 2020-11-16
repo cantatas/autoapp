@@ -4,16 +4,22 @@
       <view class="logo box">logo</view>
       <view class="number-prefix box row">
         <view class="left"><text>国家/地区</text></view>
-        <view class="right"><input type="text" /></view>
+        <view class="center"><input type="text" /></view>
+        <view class="right"></view>
       </view>
       <view class="login-name box row">
         <view class="left"><text>账号</text></view>
-        <view class="right"><input type="text" /></view>
+        <view class="center"><input type="text" /></view>
+        <view class="right"></view>
       </view>
       <view class="login-key box row">
         <view class="left"><text>密码</text></view>
-        <view class="right"><input type="text" /></view>
+        <view class="center"><input type="text" /></view>
+        <view class="right"></view>
       </view>
+	<view class="login-form box ">
+		<button>登录</button>
+	</view>
     </view>
   </view>
 </template>
@@ -26,48 +32,72 @@ export default {
       title: "Hello",
     };
   },
-  onLoad() {},
-  methods: {},
+  onLoad() {
+	  
+  },
+  methods: {
+	  
+  },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .login-page {
-  width: 100%;
-  flex-direction: column;
-  font-size: 12rpx;
+	color: #fff;
+    height: 100%;
+	width: 100%;
+	flex-direction: column;
+    justify-content: flex-start;
+	font-size: 28rpx;
+	background: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3230537411,2410127023&fm=26&gp=0.jpg)  no-repeat;
+	background-size: cover;
 }
 .page-body {
-  margin: 20rpx;
-}
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 40rpx;
+  width: 80%;
 }
 .row {
-  width: 100%;
-  border-bottom: 1px solid #888;
-  margin-bottom: 10rpx;
-  min-height: 40rpx;
-  margin: 20rpx;
+	width: 100%;
+	border-bottom: 1rpx solid #c1c1c1;
+	margin-bottom: 20rpx;
+	padding-top:40rpx;
+	padding-bottom:10rpx;
 }
 .row > * {
   height: 40rpx;
   line-height: 40rpx;
+  uni-input{
+	font-size: 28rpx;
+    margin-right: 10rpx;
+    color: #fff;
+  }
 }
 .left {
   display: inline-block;
   height: 100%;
   flex: 3;
   text-align: left;
-  background: #999
+}
+.center{
+  width: 100%;
+  flex: 6;
 }
 .right {
   width: 100%;
-  flex: 7;
+  flex: 1;
 }
 .logo {
   min-height: 200rpx;
+}
+.login-form{
+	margin-top: 80rpx;
+	uni-button{
+		width: 100%;
+		border: none;
+		background: #fc6f6f;
+		color: #fff;
+		font-size: 28rpx;
+		padding: 10rpx 0;
+	}
 }
 </style>
