@@ -1,24 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="" />
-    <a-button type="primary">
-      Primary
-    </a-button>
+    <index></index>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
-import { Button } from "ant-design-vue";
-import Vue from "vue";
-Vue.component(Button.name, Button);
-Vue.component(Button.Group.name, Button.Group);
+import index from "./components/index.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    index
   },
 };
 </script>
