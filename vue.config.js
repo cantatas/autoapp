@@ -17,6 +17,8 @@ module.exports = {
       },
     }
   },
+  publicPath :'./',
+  outputDir :'app',
   css: {
     loaderOptions: {
       less: {

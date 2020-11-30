@@ -15,7 +15,7 @@
       </div>
       <div class="row">
         <div class="row-body box">
-          <div class="form-title" >账号</div>
+          <div class="form-title" contenteditable="true" >账号</div>
           <div class="form-ele">
             <input type="text" placeholder="请输入账号" />
           </div>
@@ -59,6 +59,7 @@ export default {
   input {
     appearance: none;
     border: 0;
+    background: transparent;
   }
   .row {
     margin-bottom: 8%;
