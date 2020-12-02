@@ -1,0 +1,18 @@
+
+:root{
+    /* 颜色 */
+    --font-color:#333;
+    --bg-color:#fff;
+
+    /* 按钮 */
+    --btn-bg-color:#ff7171;
+    --btn-border-color:#ff7171;
+    --btn-font-color:#fff;
+    --btn-border-radius:5px;
+
+    /* 输入框 */
+    --input-border-color:#999;
+    --input-border-radius:5px;
+    --input-border-thick:1px;
+    --input-border-style:solid;
+}

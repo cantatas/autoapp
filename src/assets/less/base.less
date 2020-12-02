@@ -39,4 +39,16 @@
 .flex10{
   flex: 10
 }
-
+.beautify{
+  .beautify-ui{
+    position: relative;
+    z-index: 99999;
+    cursor: pointer;
+    &:before {
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 100%;
+  }
+  }
+}
