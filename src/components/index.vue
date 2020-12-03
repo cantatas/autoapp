@@ -1,13 +1,16 @@
 <template>
-  <div 
-  data-beautify-type="0" 
-  class="app-index-page"
-  :style="themeData"
-  >
-    <div class="login-page form beautify-ui" data-beautify-type="1">
+  <div data-beautify-type="0" class="app-index-page">
+    <div
+      :class="themeData.FormBorderClass"
+      :style="themeData.FormTitleColor"
+      class="login-page form beautify-ui beautify-form"
+      data-beautify-type="1"
+    >
       <!-- log -->
       <div class="row">
-        <div class="logo box">logo</div>
+        <div class="logo box">
+          <div class="logo-body box">logo</div>
+        </div>
       </div>
 
       <!-- 国家/地区 -->
@@ -75,17 +78,30 @@
 </template>
 
 <script>
+import { getInfoByIdApi } from "@/api/editor";
 export default {
   name: "indexPage",
   data() {
     return {
       themeData: {
-        '--font-color':'#333',
-        '--border-color':'#333',
-        '--bg-color':'#333',
+        FormTitleColor: "",
+        FormBorderClass: "",
       },
     };
   },
+  created(){
+    this.getInfoById()
+  },
+  methods: {
+    getInfoById(){
+      getInfoByIdApi({ _id: '5fbfcdc4cc2e24483ec3356e' }).then((res) => {
+        
+        res = res.data[1].formAttribute;
+        this.themeData.FormBorderClass = res.FormBorderClass
+        this.themeData.FormTitleColor = res.FormTitleColor
+      });
+    }
+  }
 };
 </script>
 
@@ -96,6 +112,12 @@ export default {
   .login-page {
     .logo {
       min-height: 50px;
+      .logo-body{
+        border:1px dashed #999;
+        min-height: 40px;
+        min-width: 80px;
+        border-radius: 3px;
+      }
     }
   }
   .form-btn {
@@ -105,21 +127,39 @@ export default {
     border-color: var(--btn-border-color);
     border-radius: var(--btn-border-radius);
   }
-  .input-form{
-      border-bottom: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
-    &.bottom-border{
-      border-bottom: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
+  .input-form {
+    border-bottom: var(--input-border-thick) var(--input-border-style)
+      var(--input-border-color);
+    .form-title {
+      color: var(--input-title-color);
     }
-    &.full-border{
-      padding: 10px 15px;
-      border: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
+  }
+  .form {
+    &.bottom-border .input-form {
+      border-bottom: var(--input-border-thick) var(--input-border-style)
+        var(--input-border-color);
+    }
+    &.full-border {
       // 全显边框才支持半径样式
-      &.border-radius{
+      &.border-radius .input-form {
         border-radius: var(--input-border-radius);
       }
+      .row-body {
+        > * {
+          flex: 1;
+        }
+        .form-title {
+          flex: 2;
+        }
+      }
+      .input-form {
+        padding: 10px 15px;
+        border: var(--input-border-thick) var(--input-border-style)
+          var(--input-border-color);
+      }
     }
-    .form-title {
-      color: var(--font-color);
+    &.no-border .input-form {
+      border: none;
     }
   }
 }

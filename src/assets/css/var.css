@@ -11,8 +11,9 @@
     --btn-border-radius:5px;
 
     /* 输入框 */
+    --input-title-color:#333;
     --input-border-color:#999;
-    --input-border-radius:5px;
+    --input-border-radius:0;
     --input-border-thick:1px;
     --input-border-style:solid;
 }
