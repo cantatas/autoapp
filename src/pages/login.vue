@@ -64,7 +64,7 @@
 
       <!-- 登录 -->
       <div data-beautify-type="5" class="row beautify-ui box">
-        <a class="form-btn">登录</a>
+        <a @click="doLogin" class="form-btn">登录</a>
       </div>
 
       <!-- 底部其他操作 -->
@@ -96,10 +96,13 @@ export default {
     getInfoById(){
       getInfoByIdApi({ _id: '5fbfcdc4cc2e24483ec3356e' }).then((res) => {
         
-        res = res.data[1].formAttribute;
+        res = res.data[res.data.length-1].formAttribute;
         this.themeData.FormBorderClass = res.FormBorderClass
         this.themeData.FormTitleColor = res.FormTitleColor
       });
+    },
+    doLogin(){
+      this.$router.push('/main')
     }
   }
 };
