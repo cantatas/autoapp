@@ -1,8 +1,6 @@
 <template>
-  <c-view title="HUIONE PAY" class="register-page">
-    <a href="" class="message" slot="s-right">
-        <i class="iconfont iconlingdang"></i>
-    </a>
+  <c-view title="注册" class="register-page">
+    <a href="" class="service" slot="s-right">联系客服</a>
   </c-view>
 </template>
 
@@ -23,8 +21,8 @@ export default {
 </script>
 <style lang="less" scoped>
 .register-page {
-  .message {
-      font-size: 18px;
+  .service {
+    color: #3899ec;
   }
 }
 </style>

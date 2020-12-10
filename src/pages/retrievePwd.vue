@@ -1,15 +1,12 @@
 <template>
-  <c-view title="HUIONE PAY" class="register-page">
-    <a href="" class="message" slot="s-right">
-        <i class="iconfont iconlingdang"></i>
-    </a>
+  <c-view title="找回密码" class="retrieve-page">
   </c-view>
 </template>
 
 <script>
 import cView from "@components/view.vue";
 export default {
-  name: "register",
+  name: "retrieve",
   data() {
     return {
       activeIndex: 0,
@@ -22,9 +19,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.register-page {
-  .message {
-      font-size: 18px;
-  }
+.retrieve-page {
 }
 </style>
