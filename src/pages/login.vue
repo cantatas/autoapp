@@ -2,7 +2,7 @@
   <div data-beautify-type="0" class="app-index-page">
     <div
       :class="themeData.FormBorderClass"
-      :style="themeData.FormTitleColor"
+      :style="themeData.formStyle"
       class="login-page form beautify-ui beautify-form"
       data-beautify-type="1"
     >
@@ -84,7 +84,7 @@ export default {
   data() {
     return {
       themeData: {
-        FormTitleColor: "",
+        formStyle: "",
         FormBorderClass: "",
       },
     };
@@ -98,7 +98,7 @@ export default {
         
         res = res.data[res.data.length-1].formAttribute;
         this.themeData.FormBorderClass = res.FormBorderClass
-        this.themeData.FormTitleColor = res.FormTitleColor
+        this.themeData.formStyle = res.formStyle
       });
     },
     doLogin(){
@@ -126,13 +126,13 @@ export default {
   .form-btn {
     margin-top: 30px;
     background: var(--btn-bg-color);
-    border: 1px solid;
+    border: var(--btn-border-thick) var(--btn-border-style) var(--btn-border-color);
     border-color: var(--btn-border-color);
     border-radius: var(--btn-border-radius);
+    color: var(--btn-font-color);
   }
   .input-form {
-    border-bottom: var(--input-border-thick) var(--input-border-style)
-      var(--input-border-color);
+    border-bottom: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
     .form-title {
       color: var(--input-title-color);
     }

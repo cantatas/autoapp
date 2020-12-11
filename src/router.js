@@ -44,7 +44,7 @@ const routes = [{
   component: register,
   meta: {
     name: '注册',
-    id: '03'
+    id: '04'
   }
 },
 {
@@ -52,8 +52,8 @@ const routes = [{
   name: 'retrieve',
   component: retrieve,
   meta: {
-    name: '注册',
-    id: '03'
+    name: '忘记密码',
+    id: '05'
   }
 }
 ]

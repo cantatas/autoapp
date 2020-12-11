@@ -1,14 +1,20 @@
 
 :root{
-    /* 颜色 */
+
+    /* 主题色 */
+    --theme-color:#ff7171;
+
+    /* 默认颜色 */
     --font-color:#333;
     --bg-color:#fff;
 
     /* 按钮 */
-    --btn-bg-color:#ff7171;
-    --btn-border-color:#ff7171;
     --btn-font-color:#fff;
+    --btn-bg-color:var(--theme-color);
+    --btn-border-color:var(--theme-color);
     --btn-border-radius:5px;
+    --btn-border-thick:1px;
+    --btn-border-style:solid;
 
     /* 输入框 */
     --input-title-color:#333;
@@ -16,4 +22,7 @@
     --input-border-radius:0;
     --input-border-thick:1px;
     --input-border-style:solid;
+
+    /* 头部 */
+    --header-bg-color:var(--theme-color);
 }
