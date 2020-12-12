@@ -9,16 +9,19 @@ import retrieve from './pages/retrievePwd.vue';
 
 Vue.use(Router);
 
-const routes = [{
+const defRoutes = {
   path: '/',
   redirect: '/login',
-}, {
+}
+
+const routes = [ {
   path: '/start-page',
   name: 'start-page',
   component: startPage,
   meta: {
     name: '启动页',
-    id: '01'
+    id: '01',
+    pageId : ''
   }
 }, {
   path: '/login',
@@ -26,7 +29,8 @@ const routes = [{
   component: login,
   meta: {
     name: '登录页',
-    id: '02'
+    id: '02',
+    pageId : '5fbfcdc4cc2e24483ec3356e'
   }
 }, 
 {
@@ -35,7 +39,8 @@ const routes = [{
   component: main,
   meta: {
     name: '主页面',
-    id: '03'
+    id: '03',
+    pageId : ''
   }
 }, 
 {
@@ -44,7 +49,8 @@ const routes = [{
   component: register,
   meta: {
     name: '注册',
-    id: '04'
+    id: '04',
+    pageId : ''
   }
 },
 {
@@ -53,15 +59,16 @@ const routes = [{
   component: retrieve,
   meta: {
     name: '忘记密码',
-    id: '05'
+    id: '05',
+    pageId : ''
   }
 }
 ]
-
+sessionStorage.setItem('beautify-page-list', JSON.stringify(routes));
+routes.unshift(defRoutes)
 const router = new Router({
   routes
 })
 
-sessionStorage.setItem('beautify-page-list', JSON.stringify(routes));
 
 export default router;

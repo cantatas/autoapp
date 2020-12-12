@@ -50,7 +50,7 @@
       <!-- 密码 -->
       <div
         class="row beautify-ui"
-        data-beautify-type="3"
+        data-beautify-type="2"
         data-beautify-name="pwd"
       >
         <div class="row-body input-form box">
@@ -94,8 +94,7 @@ export default {
   },
   methods: {
     getInfoById(){
-      getInfoByIdApi({ _id: '5fbfcdc4cc2e24483ec3356e' }).then((res) => {
-        
+      getInfoByIdApi({ _id: this.$route.meta.pageId }).then((res) => {
         res = res.data[res.data.length-1].formAttribute;
         this.themeData.FormBorderClass = res.FormBorderClass
         this.themeData.formStyle = res.formStyle
@@ -103,7 +102,7 @@ export default {
     },
     doLogin(){
       this.$router.push('/main')
-    }
+    },
   }
 };
 </script>
@@ -131,6 +130,12 @@ export default {
     border-radius: var(--btn-border-radius);
     color: var(--btn-font-color);
   }
+
+  .form-text-btn{
+    color: var(--text-btn-font-color);
+    text-decoration:var(--text-btn-text-decoration);
+  }
+
   .input-form {
     border-bottom: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
     .form-title {

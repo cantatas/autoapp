@@ -16,6 +16,10 @@
     --btn-border-thick:1px;
     --btn-border-style:solid;
 
+    /* 文本按钮 */
+    --text-btn-font-color:var(--font-color);
+    --text-btn-text-decoration:none;
+
     /* 输入框 */
     --input-title-color:#333;
     --input-border-color:#999;
