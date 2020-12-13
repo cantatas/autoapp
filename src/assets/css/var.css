@@ -8,17 +8,8 @@
     --font-color:#333;
     --bg-color:#fff;
 
-    /* 按钮 */
-    --btn-font-color:#fff;
-    --btn-bg-color:var(--theme-color);
-    --btn-border-color:var(--theme-color);
-    --btn-border-radius:5px;
-    --btn-border-thick:1px;
-    --btn-border-style:solid;
-
-    /* 文本按钮 */
-    --text-btn-font-color:var(--font-color);
-    --text-btn-text-decoration:none;
+    /* 头部 */
+    --header-bg-color:var(--theme-color);
 
     /* 输入框 */
     --input-title-color:#333;
@@ -27,6 +18,24 @@
     --input-border-thick:1px;
     --input-border-style:solid;
 
-    /* 头部 */
-    --header-bg-color:var(--theme-color);
+    /* 按钮 */
+    --btn-font-color:#333;
+    --btn-bg-color:transparent;
+    --btn-border-color:#666;
+    --btn-border-radius:5px;
+    --btn-border-thick:1px;
+    --btn-border-style:solid;
+
+    /* 文本按钮 */
+    --text-btn-font-color:var(--font-color);
+    --text-btn-text-decoration:none;
+
+    /* 菜单 */
+    --list-menu-font-color:#666;
+    --list-menu-font-size:12px;
+    --list-menu-column-num:33.33%;
+    --list-menu-box-shadow:none;
+    --list-menu-border-radius: 100%;
+    --list-menu-icon-bgcolor: #e2e2e2;
+    --list-menu-icon-margin-bottom : 10px;
 }

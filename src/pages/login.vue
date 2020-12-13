@@ -1,8 +1,6 @@
 <template>
   <div data-beautify-type="0" class="app-index-page">
     <div
-      :class="themeData.FormBorderClass"
-      :style="themeData.formStyle"
       class="login-page form beautify-ui beautify-form"
       data-beautify-type="1"
     >
@@ -78,28 +76,15 @@
 </template>
 
 <script>
-import { getInfoByIdApi } from "@/api/editor";
 export default {
   name: "indexPage",
   data() {
     return {
-      themeData: {
-        formStyle: "",
-        FormBorderClass: "",
-      },
     };
   },
   created(){
-    this.getInfoById()
   },
   methods: {
-    getInfoById(){
-      getInfoByIdApi({ _id: this.$route.meta.pageId }).then((res) => {
-        res = res.data[res.data.length-1].formAttribute;
-        this.themeData.FormBorderClass = res.FormBorderClass
-        this.themeData.formStyle = res.formStyle
-      });
-    },
     doLogin(){
       this.$router.push('/main')
     },
@@ -113,7 +98,7 @@ export default {
   height: 100%;
   .login-page {
     .logo {
-      min-height: 50px;
+      min-height: 100px;
       .logo-body{
         border:1px dashed #999;
         min-height: 40px;
@@ -166,9 +151,10 @@ export default {
           var(--input-border-color);
       }
     }
-    &.no-border .input-form {
-      border: none;
-    }
   }
+}
+
+.no-border .input-form {
+  border: none;
 }
 </style>

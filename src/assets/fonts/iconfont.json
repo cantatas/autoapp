@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1176289",
+      "name": "收款码-01",
+      "font_class": "shoukuanma01",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "1353488",
+      "name": "扫码",
+      "font_class": "saoma",
+      "unicode": "e7ae",
+      "unicode_decimal": 59310
+    },
+    {
+      "icon_id": "3113331",
+      "name": "付款码",
+      "font_class": "fukuanma",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
       "icon_id": "6915084",
       "name": "铃铛",
       "font_class": "lingdang",
