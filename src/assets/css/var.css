@@ -19,12 +19,12 @@
     --input-border-style:solid;
 
     /* 按钮 */
-    --btn-font-color:#333;
-    --btn-bg-color:transparent;
+    --btn-font-color:#fff;
+    --btn-bg-color:#e85e57;
     --btn-border-color:#666;
     --btn-border-radius:5px;
     --btn-border-thick:1px;
-    --btn-border-style:solid;
+    --btn-border-style:none;
 
     /* 文本按钮 */
     --text-btn-font-color:var(--font-color);
@@ -34,8 +34,8 @@
     --list-menu-font-color:#666;
     --list-menu-font-size:12px;
     --list-menu-column-num:33.33%;
-    --list-menu-box-shadow:none;
+    --list-menu-box-shadow:0 6px 15px -3px #000;
     --list-menu-border-radius: 100%;
-    --list-menu-icon-bgcolor: #e2e2e2;
+    --list-menu-icon-bgcolor: #fff;
     --list-menu-icon-margin-bottom : 10px;
 }

@@ -35,9 +35,9 @@ export default {
     return {};
   },
   methods: {
-    doGoback(){
-      history.go(-1)
-    }
+    doGoback() {
+      history.go(-1);
+    },
   },
 };
 </script>
@@ -46,6 +46,7 @@ export default {
 .view {
   display: flex;
   flex-flow: column;
+  height: 100%;
 
   .c-head {
     height: 44px;
@@ -76,6 +77,7 @@ export default {
 
   .view-container {
     position: relative;
+    height: 100%;
   }
 }
 </style>

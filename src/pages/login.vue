@@ -7,7 +7,7 @@
       <!-- log -->
       <div class="row">
         <div class="logo box">
-          <div class="logo-body box">logo</div>
+          <div class="logo-body box">HUIONE PAY</div>
         </div>
       </div>
 
@@ -67,7 +67,9 @@
 
       <!-- 底部其他操作 -->
       <div data-beautify-type="6" class="row box beautify-ui full-box">
-        <a href="/#/retrieve" class="form-text-btn btn-align-left">忘记密码？</a>
+        <a href="/#/retrieve" class="form-text-btn btn-align-left"
+          >忘记密码？</a
+        >
         <a class="form-text-btn">进入汇率</a>
         <a href="/#/register" class="form-text-btn btn-align-right">新人注册</a>
       </div>
@@ -79,16 +81,14 @@
 export default {
   name: "indexPage",
   data() {
-    return {
-    };
+    return {};
   },
-  created(){
-  },
+  created() {},
   methods: {
-    doLogin(){
-      this.$router.push('/main')
+    doLogin() {
+      this.$router.push("/main");
     },
-  }
+  },
 };
 </script>
 
@@ -99,30 +99,34 @@ export default {
   .login-page {
     .logo {
       min-height: 100px;
-      .logo-body{
-        border:1px dashed #999;
+      .logo-body {
         min-height: 40px;
         min-width: 80px;
         border-radius: 3px;
+        color: #d6ac00;
+        font-weight: 900;
+        font-size: 18px;
       }
     }
   }
   .form-btn {
     margin-top: 30px;
     background: var(--btn-bg-color);
-    border: var(--btn-border-thick) var(--btn-border-style) var(--btn-border-color);
+    border: var(--btn-border-thick) var(--btn-border-style)
+      var(--btn-border-color);
     border-color: var(--btn-border-color);
     border-radius: var(--btn-border-radius);
     color: var(--btn-font-color);
   }
 
-  .form-text-btn{
+  .form-text-btn {
     color: var(--text-btn-font-color);
-    text-decoration:var(--text-btn-text-decoration);
+    text-decoration: var(--text-btn-text-decoration);
   }
 
   .input-form {
-    border-bottom: var(--input-border-thick) var(--input-border-style) var(--input-border-color);
+    border-bottom: var(--input-border-thick) var(--input-border-style)
+      var(--input-border-color);
     .form-title {
       color: var(--input-title-color);
     }

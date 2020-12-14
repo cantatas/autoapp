@@ -6,53 +6,53 @@
     <div data-beautify-type="8" class="menu main-menu box beautify-ui">
       <a>
         <i class="iconfont iconsaoma"></i>
-        <span>扫码付</span>
+        <div class="menu-text">扫码付</div>
       </a>
       <a>
         <i class="iconfont iconfukuanma"></i>
-        <span>付款码</span>
+        <div class="menu-text">付款码</div>
       </a>
       <a>
         <i class="iconfont iconshoukuanma01"></i>
-        <span>收款码</span>
+        <div class="menu-text">收款码</div>
       </a>
     </div>
     <div data-beautify-type="7" class="menu list-menu box beautify-ui">
       <a>
         <div class="icon-box"></div>
-        <span>提现</span>
+        <div class="menu-text">提现</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>话费充值</span>
+        <div class="menu-text">话费充值</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>转账</span>
+        <div class="menu-text">转账</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>兑汇</span>
+        <div class="menu-text">兑汇</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>理财</span>
+        <div class="menu-text">理财</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>生活缴费</span>
+        <div class="menu-text">生活缴费</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>充值</span>
+        <div class="menu-text">充值</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>汇率</span>
+        <div class="menu-text">汇率</div>
       </a>
       <a>
         <div class="icon-box"></div>
-        <span>账单</span>
+        <div class="menu-text">账单</div>
       </a>
     </div>
   </c-view>
@@ -86,6 +86,7 @@ export default {
   .menu {
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 10px;
     a {
       text-align: center;
       padding: 20px 0;
@@ -100,6 +101,12 @@ export default {
         margin: 0 auto;
         border-radius: 100%;
         margin-bottom: 10px;
+      }
+      .menu-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
       }
       .iconfont {
         display: block;
