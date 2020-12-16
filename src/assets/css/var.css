@@ -37,5 +37,6 @@
     --list-menu-box-shadow:0 6px 15px -3px #000;
     --list-menu-border-radius: 100%;
     --list-menu-icon-bgcolor: #fff;
-    --list-menu-icon-margin-bottom : 10px;
+    --list-menu-icon-color: #105595;
+    --list-menu-icon-margin-bottom : 15px;
 }

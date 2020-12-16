@@ -136,25 +136,6 @@ export default {
       border-bottom: var(--input-border-thick) var(--input-border-style)
         var(--input-border-color);
     }
-    &.full-border {
-      // 全显边框才支持半径样式
-      &.border-radius .input-form {
-        border-radius: var(--input-border-radius);
-      }
-      .row-body {
-        > * {
-          flex: 1;
-        }
-        .form-title {
-          flex: 2;
-        }
-      }
-      .input-form {
-        padding: 10px 15px;
-        border: var(--input-border-thick) var(--input-border-style)
-          var(--input-border-color);
-      }
-    }
   }
 }
 

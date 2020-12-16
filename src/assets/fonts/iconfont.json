@@ -6,6 +6,69 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1032307",
+      "name": "美元_dollar142",
+      "font_class": "meiyuandollar142",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1223369",
+      "name": "汇率转换",
+      "font_class": "huilvzhuanhuan",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "1525964",
+      "name": "流水订单",
+      "font_class": "liushuidingdan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "3407401",
+      "name": "转账-",
+      "font_class": "zhuanzhang-",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4920338",
+      "name": "转账",
+      "font_class": "zhuanzhang",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "7790996",
+      "name": "理财",
+      "font_class": "licai",
+      "unicode": "e7e9",
+      "unicode_decimal": 59369
+    },
+    {
+      "icon_id": "8131541",
+      "name": "充",
+      "font_class": "chong",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "9511264",
+      "name": "生活缴费",
+      "font_class": "shenghuojiaofei",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "9068912",
+      "name": "提现",
+      "font_class": "tixian",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
       "icon_id": "1176289",
       "name": "收款码-01",
       "font_class": "shoukuanma01",

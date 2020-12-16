@@ -1,6 +1,7 @@
 <template>
   <c-view title="注册" class="register-page">
     <a href="" class="service" slot="s-right">联系客服</a>
+    注册
   </c-view>
 </template>
 

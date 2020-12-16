@@ -18,11 +18,13 @@
       </a>
     </div>
     <div data-beautify-type="7" class="menu list-menu box beautify-ui">
-      <a>
-        <div class="icon-box"></div>
-        <div class="menu-text">提现</div>
+      <a :key="index" v-for="(item, index) in menus">
+        <div class="icon-box box">
+          <i class="iconfont" :class="item.icon"></i>
+        </div>
+        <div class="menu-text">{{ item.text }}</div>
       </a>
-      <a>
+      <!-- <a>
         <div class="icon-box"></div>
         <div class="menu-text">话费充值</div>
       </a>
@@ -53,7 +55,7 @@
       <a>
         <div class="icon-box"></div>
         <div class="menu-text">账单</div>
-      </a>
+      </a> -->
     </div>
   </c-view>
 </template>
@@ -65,6 +67,44 @@ export default {
   data() {
     return {
       activeIndex: 0,
+      menus: [
+        {
+          text: "提现",
+          icon: "icontixian",
+        },
+        {
+          text: "话费充值",
+          icon: "iconmeiyuandollar142",
+        },
+        {
+          text: "转账",
+          icon: "iconzhuanzhang-",
+        },
+        {
+          text: "兑汇",
+          icon: "iconzhuanzhang",
+        },
+        {
+          text: "理财",
+          icon: "iconlicai",
+        },
+        {
+          text: "生活缴费",
+          icon: "iconshenghuojiaofei",
+        },
+        {
+          text: "充值",
+          icon: "iconchong",
+        },
+        {
+          text: "汇率",
+          icon: "iconhuilvzhuanhuan",
+        },
+        {
+          text: "账单",
+          icon: "iconliushuidingdan",
+        },
+      ],
     };
   },
   components: {
@@ -110,8 +150,7 @@ export default {
       }
       .iconfont {
         display: block;
-        font-size: 32px;
-        margin-bottom: 10px;
+        font-size: 22px;
       }
     }
     &.list-menu {
@@ -125,6 +164,9 @@ export default {
           border-radius: var(--list-menu-border-radius);
           background: var(--list-menu-icon-bgcolor);
           margin-bottom: var(--list-menu-icon-margin-bottom);
+          .iconfont {
+            color: var(--list-menu-icon-color);
+          }
         }
       }
     }
@@ -134,6 +176,10 @@ export default {
       justify-content: center;
       a {
         color: #fff;
+        .iconfont {
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
       }
     }
   }

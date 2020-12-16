@@ -20,8 +20,8 @@ export default {
   },
   methods: {
     getInfoById() {
-      getInfoByIdApi({ _id: this.$route.meta.pageId }).then((res) => {
-        res = res.data[res.data.length - 1].formAttribute;
+      getInfoByIdApi({ _id: window.AutoappsManifest.appId }).then((res) => {
+        res = res.data.formAttribute;
         this.themeData.formStyle = res.formStyle;
         this.themeData.FormBorderClass = res.FormBorderClass;
       });
