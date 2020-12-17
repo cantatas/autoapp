@@ -115,9 +115,10 @@ export default {
 </script>
 <style lang="less" scoped>
 /deep/ .c-head {
-  background: #202533 !important;
-  color: #fff;
-  border-color: #202533 !important;
+  // 主菜单与头部颜色同步
+  background: var(--main-menu-bgcolor) !important;
+  color: var(--main-menu-font-color);
+  border-color: var(--main-menu-bgcolor) !important;
 }
 .main-page {
   .message {
@@ -171,14 +172,16 @@ export default {
       }
     }
     &.main-menu {
-      background: #202533;
+      background: var(--main-menu-bgcolor);
       padding: 20px 0;
       justify-content: center;
       a {
-        color: #fff;
+        color: var(--main-menu-font-color);
+        font-size: var(--main-menu-font-size);
         .iconfont {
-          font-size: 32px;
-          margin-bottom: 10px;
+          color: var(--main-menu-icon-color);
+          font-size: var(--main-menu-font-icon-size);
+          margin-bottom: var(--main-menu-icon-margin-bottom);
         }
       }
     }

@@ -7,6 +7,7 @@
       <!-- log -->
       <div class="row">
         <div class="logo box">
+          <div class="logo-cover"></div>
           <div class="logo-body box">HUIONE PAY</div>
         </div>
       </div>
@@ -95,17 +96,26 @@ export default {
 <style lang="less" scoped>
 @import "@/assets/less/form.less";
 .app-index-page {
+  background: url(../assets/imgs/login/login_bg.jpg) no-repeat;
+  background-size: cover;
   height: 100%;
   .login-page {
     .logo {
-      min-height: 100px;
+      flex-flow: column;
+      padding-top: 30px;
+      .logo-cover {
+        height: 100px;
+        width: 100px;
+        background: url(../assets/imgs/login/login_huione_logo.png) no-repeat;
+        background-size: cover;
+      }
       .logo-body {
         min-height: 40px;
         min-width: 80px;
         border-radius: 3px;
-        color: #d6ac00;
-        font-weight: 900;
-        font-size: 18px;
+        color: #fbf2c9;
+        font-weight: 600;
+        font-size: 16px;
       }
     }
   }
@@ -127,6 +137,7 @@ export default {
   .input-form {
     border-bottom: var(--input-border-thick) var(--input-border-style)
       var(--input-border-color);
+    input,
     .form-title {
       color: var(--input-title-color);
     }

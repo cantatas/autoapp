@@ -30,6 +30,14 @@
     --text-btn-font-color:var(--font-color);
     --text-btn-text-decoration:none;
 
+    /* 主菜单 */
+    --main-menu-font-color:#fff;
+    --main-menu-font-size:12px;
+    --main-menu-bgcolor: #202533;
+    --main-menu-font-icon-size:32px;
+    --main-menu-icon-color: #fff;
+    --main-menu-icon-margin-bottom : 10px;
+
     /* 菜单 */
     --list-menu-font-color:#666;
     --list-menu-font-size:12px;
