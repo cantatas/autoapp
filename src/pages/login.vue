@@ -75,16 +75,22 @@
         <a href="/#/register" class="form-text-btn btn-align-right">新人注册</a>
       </div>
     </div>
+
+    <version></version>
   </div>
 </template>
 
 <script>
+import version from "./version.vue";
 export default {
   name: "indexPage",
   data() {
     return {};
   },
   created() {},
+  components: {
+    version,
+  },
   methods: {
     doLogin() {
       this.$router.push("/main");
