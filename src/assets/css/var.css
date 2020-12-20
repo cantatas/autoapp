@@ -12,7 +12,7 @@
     --header-bg-color:var(--theme-color);
 
     /* 输入框 */
-    --input-title-color:#333;
+    --input-title-color:#fff;
     --input-border-color:#999;
     --input-border-radius:0;
     --input-border-thick:1px;
@@ -27,7 +27,7 @@
     --btn-border-style:none;
 
     /* 文本按钮 */
-    --text-btn-font-color:var(--font-color);
+    --text-btn-font-color:#fff;
     --text-btn-text-decoration:none;
 
     /* 主菜单 */

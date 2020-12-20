@@ -53,6 +53,7 @@ export default {
     line-height: 44px;
     border-bottom: 1px solid #e8e8e8;
     background: #fff;
+    width: 100%;
     > * {
       text-align: center;
       font-size: 14px;

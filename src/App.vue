@@ -21,9 +21,11 @@ export default {
   methods: {
     getInfoById() {
       getInfoByIdApi({ _id: window.AutoappsManifest.appId }).then((res) => {
-        res = res.data.formAttribute;
-        this.themeData.formStyle = res.formStyle;
-        this.themeData.FormBorderClass = res.FormBorderClass;
+        if( res.data ){
+          res = res.data.formAttribute;
+          this.themeData.formStyle = res.formStyle;
+          this.themeData.FormBorderClass = res.FormBorderClass;
+        }
       });
     },
   },

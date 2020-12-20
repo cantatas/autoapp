@@ -1,7 +1,7 @@
 <template>
   <c-view title="注册" class="register-page">
     <a href="" class="service" slot="s-right">联系客服</a>
-    注册
+    <div class="no-data box">新人注册</div>
   </c-view>
 </template>
 

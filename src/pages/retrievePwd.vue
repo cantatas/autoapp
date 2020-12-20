@@ -1,6 +1,6 @@
 <template>
-  <c-view title="找回密码" class="retrieve-page box">
-    找回密码
+  <c-view title="忘记密码" class="retrieve-page box">
+    <div class="no-data box">忘记密码</div>
   </c-view>
 </template>
 
