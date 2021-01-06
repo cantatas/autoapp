@@ -68,11 +68,11 @@
 
       <!-- 底部其他操作 -->
       <div data-beautify-type="6" class="row box beautify-ui full-box">
-        <a href="/#/retrieve" class="form-text-btn btn-align-left"
+        <a href="#/retrieve" class="form-text-btn btn-align-left"
           >忘记密码？</a
         >
         <a class="form-text-btn">进入汇率</a>
-        <a href="/#/register" class="form-text-btn btn-align-right">新人注册</a>
+        <a href="#/register" class="form-text-btn btn-align-right">新人注册</a>
       </div>
     </div>
 
